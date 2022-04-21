@@ -1,0 +1,32 @@
+@import 'color';
+
+.curentUser {
+    max-width: 420px;
+    padding: 10px 10px;
+    margin-bottom: 24px;
+    background-color: $bg-card-user;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+
+    &__block {
+        font-size: 11px;
+        line-height: 13px;
+        
+        .keyName {
+            color: $text-secondary;
+            margin-right: 7px;
+        }
+    
+    }
+
+    .more-btn {
+        font-size: 12px;
+        line-height: 14px;
+        color: $bg-blue;
+        cursor: pointer;
+    }
+
+}

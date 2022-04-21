@@ -1,0 +1,17 @@
+@import 'color';
+
+.left-block{
+    background: $bg-secondary;
+    max-width: 152px;
+    .filter{
+        margin-top: 35px;
+        .filter__btn{
+            padding-left: 20px;
+        }
+        .filter__title{
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}

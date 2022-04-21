@@ -1,0 +1,21 @@
+.profile {
+    max-width: 438px;
+
+    &__forms {
+        padding-top: 20px;
+        margin-bottom: 10px;
+        border: 1px solid #F3F3F3;
+        border-radius: 8px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+

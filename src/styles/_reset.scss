@@ -1,0 +1,52 @@
+@import 'color';
+body {
+  margin: 0;
+  padding: 0;
+  
+  background-color: $bg-body;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  
+}
+input:focus-visible{
+  outline:none;
+}
+
+.btn {
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  color: $color-white;
+}
+.btn-blue{
+  background-color: $bg-blue;
+}
+.btn-secondary{
+  background-color: $btn-secondary;
+  font-size: 12px;
+line-height: 14px;
+}
+.btn-success{
+  background-color: $btn-success;
+  font-size: 12px;
+line-height: 14px;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  
+}
+
+
+.is-invalid{
+  border: 1px solid $danger !important;
+}
