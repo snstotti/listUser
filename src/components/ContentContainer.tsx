@@ -22,10 +22,10 @@ const ContentContainer: FC<listUsersProps> = ({users,setlistUsers,onChangeInput}
                 <Switch>
 
 
-                    <Route exact path="/listUser">
+                    <Route exact path="/">
                         <ListUsers listUsers={users} />
                     </Route>
-                    <Route exact path='/listUser/moreInfo/:number' >
+                    <Route exact path='/moreInfo/:number' >
                         <ProfileUser onChangeInput={onChangeInput} setlistUsers={setlistUsers} listUsers={users} />
                     </Route>
 
