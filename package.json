@@ -7,13 +7,13 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "prodeploy":"npm run build",
-    "deploy":"gh-pages -d dist"
-
+    "prodeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "@types/webpack": "4.1.4",
     "css-loader": "^6.7.1",
     "gh-pages": "^3.2.3",
@@ -29,7 +29,7 @@
     "@types/react-dom": "^18.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^5",
     "sass": "^1.50.1",
     "sass-loader": "^12.6.0"
   }
