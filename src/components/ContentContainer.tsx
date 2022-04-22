@@ -1,7 +1,7 @@
 import React, { Dispatch, FC, SetStateAction} from "react";
 import ListUsers from './ListUsers';
-import {HashRouter as Router,Routes,Route} from "react-router-dom";
-
+import {Routes,Route} from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import '../styles/content.scss';
 import ProfileUser from "./ProfileUser";
 import { ICuretnUser } from "../types/types";
@@ -15,21 +15,23 @@ interface listUsersProps {
 const ContentContainer: FC<listUsersProps> = ({users,setlistUsers,onChangeInput}) => {
 
     return (
+        <HashRouter>
+            
+                <div className="right-block">
 
-        <Router>
-            <div className="right-block">
+                    <Routes>
 
-                <Routes>
+                        <Route path="/" element={<ListUsers listUsers={users} />} />
 
-                    <Route path="/" element={<ListUsers listUsers={users} />} />
-
-                    <Route path='/moreInfo/:number' element={<ProfileUser onChangeInput={onChangeInput} setlistUsers={setlistUsers} listUsers={users} />} />
+                        <Route path='/moreInfo/:number' element={<ProfileUser onChangeInput={onChangeInput} setlistUsers={setlistUsers} listUsers={users} />} />
 
 
-                </Routes>
-            </div>
+                    </Routes>
+                </div>
 
-        </Router>
+            
+        </HashRouter>
+
     )
 
 
