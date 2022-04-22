@@ -2,12 +2,12 @@
   "name": "user-list",
   "version": "1.0.0",
   "description": "test-app",
-  "homepage": "https://snstotti.github.io/listUser/",
+  "homepage": "https://snstotti.github.io/listUser",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "predeploy":"npm run build",
+    "prodeploy":"npm run build",
     "deploy":"gh-pages -d dist"
 
   },
