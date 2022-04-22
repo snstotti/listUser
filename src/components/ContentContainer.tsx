@@ -1,6 +1,6 @@
 import React, { Dispatch, FC, SetStateAction} from "react";
 import ListUsers from './ListUsers';
-import {Routes,Route} from "react-router-dom";
+import {Routes,Route, HashRouter} from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import '../styles/content.scss';
 import ProfileUser from "./ProfileUser";
@@ -15,7 +15,7 @@ interface listUsersProps {
 const ContentContainer: FC<listUsersProps> = ({users,setlistUsers,onChangeInput}) => {
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             
                 <div className="right-block">
 
@@ -34,7 +34,7 @@ const ContentContainer: FC<listUsersProps> = ({users,setlistUsers,onChangeInput}
             </div>
 
             
-        </BrowserRouter>
+        </HashRouter>
 
     )
 
