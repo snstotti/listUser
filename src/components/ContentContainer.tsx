@@ -17,7 +17,7 @@ const ContentContainer: FC<listUsersProps> = ({ users, setlistUsers, onChangeInp
     return (
 
 
-        <div className="right-block">
+        <div className="right-block ok">
 <ListUsers listUsers={users} />
             <Routes>
                 {/* <Route path={"/"} element={<ListUsers listUsers={users} />} /> */}
