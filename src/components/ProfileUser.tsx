@@ -16,7 +16,7 @@ const ProfileUser: FC<listUsersProps>= ({listUsers,setlistUsers,onChangeInput}) 
 
   
 
-    const { number } = useParams();
+    const { number } = useParams<{ number: string }>();
     const [edit, setEdit] = useState(false);
     
     const filterListUser = listUsers.filter(user=>user.id === Number(number))

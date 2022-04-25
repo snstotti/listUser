@@ -17,7 +17,10 @@ const FormLayout = ({ flag, name,title,type,value,change}:FormProps) => {
 
     let isInvalid = !value ? " is-invalid" : ""
 
-    const { number } = useParams();
+    const  {number} = useParams<{ number: string }>();
+
+   
+    
 
     return <div className="form">
         <div className="form__title">{title}</div>
