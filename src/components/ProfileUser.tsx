@@ -2,6 +2,7 @@ import React, { Dispatch, FC, SetStateAction, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 
 
+
 import '../styles/profileUser.scss';
 import { ICuretnUser } from "../types/types";
 import FormLayout from "./FormLayout";

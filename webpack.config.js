@@ -8,6 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         publicPath: '/listUser/'
+        // publicPath: '/'
     },
     module: {
         rules: [
