@@ -18,12 +18,12 @@ const ContentContainer: FC<listUsersProps> = ({ users, setlistUsers, onChangeInp
 
 
         <div className="right-block">
-
+<ListUsers listUsers={users} />
             <Routes>
-                <Route path="/" element={<ListUsers listUsers={users} />} />
+                {/* <Route path={"/"} element={<ListUsers listUsers={users} />} /> */}
 
 
-                <Route path='/moreInfo/:number' element={<ProfileUser onChangeInput={onChangeInput} setlistUsers={setlistUsers} listUsers={users} />} />
+                <Route path={'/moreInfo/:number'} element={<ProfileUser onChangeInput={onChangeInput} setlistUsers={setlistUsers} listUsers={users} />} />
 
 
             </Routes>
